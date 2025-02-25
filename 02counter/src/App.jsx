@@ -6,11 +6,18 @@ import './App.css'
 function App() {
   const [counter , setcounter] = useState(15)
   //let counter = 15
+
   const addValue = () =>{
-    console.log("Clicked", counter)
     //counter =counter + 1
     setcounter(counter + 1) 
+    console.log("Clicked", counter)
   }
+
+  const removeValue = () =>{
+    setcounter(counter-1)
+    console.log("clicked" , counter)
+  }
+
   return (
     <>
     <h1>Chai aur react</h1>
@@ -20,7 +27,7 @@ function App() {
         Add value {counter}
     </button>
     <br/>
-    <button
+    <button onClick = {removeValue}
     >remove value {counter}</button>
     <p>footer : {counter}</p>
     </>
