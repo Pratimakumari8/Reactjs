@@ -9,8 +9,11 @@ function App() {
 
   const addValue = () =>{
     //counter =counter + 1
-    setcounter(counter + 1) 
-    console.log("Clicked", counter)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter +1)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+
   }
 
   const removeValue = () =>{
